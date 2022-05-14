@@ -17,6 +17,22 @@ nav{
   justify-content:baseline;
   margin-left: 45px;
 }
+.cv-links{
+  display: block;
+  justify-content:baseline;
+  margin-left: 45px;
+}
+.cv-links li{
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.cv-links a{
+  color:rgb(17, 17, 17);
+  text-decoration: none;
+  font-family:'Consolas';
+}
 .nav-links li{
   list-style: none;
   padding-top: 10px;
@@ -90,12 +106,18 @@ img{
   margin-top: 10px;
   width: auto;
 }
-button#btnID1{
-  width: 20%;
-  height: 50px;
-  border: 0;
-
+.btnID1{
+  position: relative;
   text-align: left;
+  font-family:'Consolas';
+  font-size: 16px;
+  padding: 0;
+  padding-left: 35px;
+  padding-top: 10px;
+  font-weight: bold;
+  border: 0;
+  display: list-item;
+  width: 100px;
 }
 button#btnID2{
   width: 20%;

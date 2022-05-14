@@ -4,44 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="/index.css">
+  <title>TEST</title>
 </head>
 <body>
-  <!DOCTYPE html>
-<html>
-
-<body>
-  <button type="button"
-		onclick="show()" id="btnID1">+</button>
-	<button type="button"
-		onclick="hide()" id="btnID2">-</button>
-	<div>
-		<img id="image" src="" />
-	</div>
-	<script>
-		function show() {
-			let image = document.getElementById("image");
-      document.getElementById("btnID1")
-				.style.display = "none";
-      document.getElementById("btnID2")
-				.style.display = "";
-      image.src ="/components/img4.jpg"
-		}
-	</script>
+  <div>
+    <input onclick="show()" id="btnID1" class ="btnID1" type="button" value="Work"/>
+    <ul class="nav-links" id="nav-links" style="display:none;">
+      <li><a href="/pages/html/Construction_Zones.html">Construction Zones - 2022</a></li>
+      <li><a href="/pages/html/NILMDTS.html">Now I Lay Me Down To Sleep - 2022</a></li>
+      <li><a href="/pages/html/Harlingen_AGRI.html">Harlingen AGRI - 2021</a></li>
+      <li><a href="/pages/html/Harlingen.html">Harlingen - 2020</a></li>
+      <li><a href="/pages/html/Disquiet.html">Disquiet - 2019</a></li>
+    </ul>
+    <input onclick="show2()" id="btnID1" class ="btnID1" type="button" value="CV&#62;"/>
+    <ul class="cv-links" id="cv-links" style="display:none;">
+      <li><a href="/pages/html/CV.html">CV_May_2022</a></li>
+    </ul>
+  </div>
   <script>
-    function hide() {
-      let image = document.getElementById("image");
-        document.getElementById("btnID2")
-          .style.display = "none";
-        document.getElementById("btnID1")
-          .style.display = "";
-        image.src =""
-      }
-  </script>
-</body>
+    function show() {
+      var x = document.getElementById("nav-links");
+        if (x.style.display === "none") {x.style.display = "block";} 
+        else {x.style.display = "none";}
+        if (event.target.value === "Work") {event.target.value = "-";}
+        else {event.target.value = "Work";}
+    }
+    function show2(){
+      var x = document.getElementById("cv-links");
+      if (x.style.display === "none") {x.style.display = "block";} 
+        else {x.style.display = "none";}
+        if (event.target.value === "CV&#62;") {event.target.value = "-";}
+        else {event.target.value = "CV&#62;";}
+    }
 
+    
+</script>
+</body>
 </html>
 
-  
-</body>
-</html>
