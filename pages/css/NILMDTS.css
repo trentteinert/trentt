@@ -1,0 +1,118 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+}
+nav{
+  display: flex;
+  justify-content: left;
+  align-items:flex-start;
+  min-height: 4vh;
+  font-family:'Consolas';
+
+}
+.nav-links{
+  display: block;
+  justify-content:baseline;
+  margin-left: 45px;
+}
+.nav-links li{
+  list-style: none;
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.nav-links a{
+  color:rgb(17, 17, 17);
+  text-decoration: none;
+  font-family:'Consolas';
+}
+.back-links{
+  position:fixed;
+  display: block;
+  justify-content:baseline;
+  margin-left: 25px;
+  bottom: 10px;
+}
+.back-links li{
+  list-style: none;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.back-links a{
+  color:rgb(17, 17, 17);
+  text-decoration: none;
+  font-family:'Consolas';
+}
+h1{
+  text-align: left;
+  font-family:'Consolas';
+  font-size: 16px;
+  padding: 0;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.textblock{
+  position: relative;
+  max-width: 60%;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+h2{
+  text-align: left;
+  font-family:'Consolas';
+  font-size: 16px;
+  padding: 0;
+  font-weight: 100;
+}
+h3{
+  position: relative;
+  text-align: left;
+  font-family:'Consolas';
+  font-size: 16px;
+  padding: 0;
+  padding-left: 35px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+h4{
+  position: relative;
+  text-align: left;
+  font-family:'Consolas';
+  font-size: 16px;
+  padding: 0;
+  padding-left: 35px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.imgblock{
+  position: relative;
+  width: 300px;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
+  background-color: beige;
+
+}
+.slideshow-container{
+  position:absolute;
+  left: 0;
+  height: auto;
+  width: auto;
+  background-color: aqua;
+}
+.prevandnext{
+  display: flex;
+  justify-content:space-around;
+  padding-left:0;
+  left:0;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;}
