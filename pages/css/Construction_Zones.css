@@ -16,7 +16,7 @@ nav{
   display: block;
   justify-content:baseline;
   margin-left: 25px;
-  bottom: 10px;
+  bottom: 25px;
 }
 .back-links li{
   list-style: none;
@@ -112,10 +112,11 @@ img{
 #btn {
   position: absolute;
 }
+
 .dragfile{
   display: block;
   height: 70px;
-  left: 50%;
+  left: 15%;
   width: auto;
   background-color: rgba(0, 0, 255, 0);
 }

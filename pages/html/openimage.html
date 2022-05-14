@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html>
+
+<body>
+  <button type="button"
+		onclick="show()" id="btnID1">+</button>
+	<button type="button"
+		onclick="hide()" id="btnID2">-</button>
+	<div>
+		<img id="image" src="" />
+	</div>
+	<script>
+		function show() {
+			let image = document.getElementById("image");
+      document.getElementById("btnID1")
+				.style.display = "none";
+      document.getElementById("btnID2")
+				.style.display = "";
+      image.src ="/components/img4.jpg"
+		}
+	</script>
+  <script>
+    function hide() {
+      let image = document.getElementById("image");
+        document.getElementById("btnID2")
+          .style.display = "none";
+        document.getElementById("btnID1")
+          .style.display = "";
+        image.src =""
+      }
+  </script>
+</body>
+
+</html>
+
+  
+</body>
+</html>

@@ -33,7 +33,7 @@ nav{
   display: block;
   justify-content:baseline;
   margin-left: 25px;
-  bottom: 10px;
+  bottom: 25px;
 }
 .back-links li{
   list-style: none;
@@ -96,7 +96,6 @@ h4{
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 25px;
-  background-color: beige;
 
 }
 .slideshow-container{
@@ -104,15 +103,40 @@ h4{
   left: 0;
   height: auto;
   width: auto;
-  background-color: aqua;
 }
 .prevandnext{
   display: flex;
-  justify-content:space-around;
+  justify-content: center;
   padding-left:0;
   left:0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.prev{
+  display:flex;
+  justify-content: center;
+  width: 350px;
+
+}
+.next{
+  display: flex;
+  justify-content: center;
+  width: 350px;
+
+}
+.numbertext{
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 0px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 .image{
   display: flex;
   justify-content: center;
-  align-items:flex-start;}
+  align-items:flex-start;
+}
+footer{
+  height: 1000px;
+  width: 100%;
+}

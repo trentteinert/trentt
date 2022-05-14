@@ -18,9 +18,38 @@
     the people to draw him in by their movement and routine.
     Distracting the mind and falling into sync with the environment.*/</h2>
   </div>
-  <div class="imgblock">
-    <img class='img' src="/components/img1.jpg">
+
+  <div class="expand">
+    <button type="button"
+      onclick="show()" id="btnID1" style="display:inline-block;">img1 &#8594;</button>
+    <button type="button"
+      onclick="hide()" id="btnID2" style="display:none;">&#8595;</button>
   </div>
+  <div>
+    <!-- img element without src attribute -->
+    <img id="img1" src="/components/img1.jpg" style="display:none;" />
+</div>
+  <script>
+    function show() {
+        let image = document.getElementById("img1");
+          image.src ="/components/img1.jpg"
+          image.style ="height:40%; width:40%; margin-left:25px; margin-bottom:0px;"
+          document.getElementById("btnID1")
+            .style.display = "none";
+          document.getElementById("btnID2")
+            .style.display = "inline-block";
+    }
+    function hide() {
+        let image = document.getElementById("img1");
+          image.src ="/components/img1.jpg"
+          image.style ="display:none;"
+          document.getElementById("btnID1")
+            .style.display = "inline-block";
+          document.getElementById("btnID2")
+            .style.display = "none";
+    }
+</script>
+<div>
   <h3>Work</h3>
   <ul class="nav-links">
     <li><a href="/pages/html/Construction_Zones.html">Construction Zones - 2022</a></li>
@@ -30,9 +59,10 @@
     <li><a href="/pages/html/Disquiet.html">Disquiet - 2019</a></li>
   </ul>
   <h4>CV</h4>
-
   <ul class="nav-links">
     <li><a href="/pages/html/CV.html">CV_May_2022</a></li>
   </ul>
+</div>
 </body>
 </html>
+ 

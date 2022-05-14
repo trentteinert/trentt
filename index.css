@@ -78,9 +78,28 @@ h4{
   width: 35%;
   margin-left: 35px;
   margin-top: 10px;
-  background-color: aqua;
+  background-color: rgb(0, 0, 0);
 }
 img{
   height: 100%;
   width: 100%;
+
+}
+.expand{
+  margin-left: 25px;
+  margin-top: 10px;
+  width: auto;
+}
+button#btnID1{
+  width: 20%;
+  height: 50px;
+  border: 0;
+
+  text-align: left;
+}
+button#btnID2{
+  width: 20%;
+  height: 50px;
+  border: 0;
+  text-align: left;
 }
