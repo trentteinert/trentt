@@ -71,17 +71,16 @@ h4{
   padding-top: 10px;
   font-weight: bold;
 }
+.imgblock{
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: 35%;
+  margin-left: 35px;
+  margin-top: 10px;
+  background-color: aqua;
+}
 img{
-  position: relative;
   height: 100%;
   width: 100%;
-}
-.imgblock{
-  position: relative;
-  width: 300px;
-  height: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 25px;
-
 }
