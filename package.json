@@ -1,0 +1,20 @@
+{
+  "name": "trentt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trentteinert/trentt.git"
+  },
+  "author": "trentteinert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trentteinert/trentt/issues"
+  },
+  "homepage": "https://github.com/trentteinert/trentt#readme"
+}
