@@ -1,0 +1,20 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(255, 0, 0);
+}
+.dragfilebox{
+  display: inline;
+  height: 100%;
+  z-index: 15;
+  width: 100%;
+  padding: auto;
+  background-color: blueviolet;
+}
+a#btndrag{
+  background-color: rgb(255, 0, 0);
+}
+a#btndrag2{
+  background-color: rgba(0, 0, 0, 0);
+}

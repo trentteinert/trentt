@@ -99,7 +99,6 @@ h4{
 img{
   height: 100%;
   width: 100%;
-
 }
 .expand{
   margin-left: 25px;
@@ -119,9 +118,37 @@ img{
   display: list-item;
   width: 100px;
 }
-button#btnID2{
+button#contentbtnID2{
   width: 20%;
-  height: 50px;
+  height: 40px;
   border: 0;
   text-align: left;
+  font-weight: bold;
+  font-family: 'Consolas';
+}
+button#contentbtnID1{
+  width: 20%;
+  height: 40px;
+  border: 0;
+  text-align: left;
+  font-weight: bold;
+  font-family: 'Consolas';
+}
+.expand{
+  padding: 0;
+  margin: 0;
+  margin-left: 25px;
+}
+.dragfile{
+  display: inline-block;
+  height: 70px;
+  width: auto;
+  background-color: rgba(0, 0, 255, 0);
+  padding: 0;
+}
+a#btndrag{
+  background-color: rgba(0, 0, 0, 0);
+}
+a#btndrag2{
+  background-color: rgba(0, 0, 0, 0);
 }
