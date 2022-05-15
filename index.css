@@ -140,8 +140,9 @@ button#contentbtnID1{
   margin-left: 25px;
 }
 .dragfile{
-  display: inline-block;
-  height: 70px;
+  display: inline-flex;
+  justify-content: center;
+  height: 100px;
   width: auto;
   background-color: rgba(0, 0, 255, 0);
   padding: 0;
@@ -151,4 +152,25 @@ a#btndrag{
 }
 a#btndrag2{
   background-color: rgba(0, 0, 0, 0);
+}
+a#btndrag3{
+  background-color: rgba(0, 0, 0, 0);
+
+}
+a#btndrag4{
+  background-color: rgba(0, 0, 0, 0);
+
+}
+a#btndrag5{
+  background-color: rgba(0, 0, 0, 0);
+
+}
+.folderbox{
+  display: block;
+  justify-content:baseline;
+  background-color: rgba(255, 0, 0, 0);
+  height: auto;
+  width: 100%;
+  margin-left: 25px;
+  margin-top: 10px;
 }
