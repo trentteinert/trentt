@@ -4,6 +4,10 @@
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
+@font-face {
+  font-family: Consolas;
+  src: url(//db.onlinewebfonts.com/t/1db29588408eadbd4406aae9238555eb.eot?#iefix);
+}
 nav{
   display: flex;
   justify-content: left;
