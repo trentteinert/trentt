@@ -1,9 +1,9 @@
 function changeimg() {
   var Image_Id = document.getElementById('btnID1');
-  if (Image_Id.src.match("/components/1closed.png")) {
-      Image_Id.src = "/components/2open.png";
+  if (Image_Id.src.match("/components/Work_icon.png")) {
+      Image_Id.src = "/components/Work_icon.png";
   }
   else {
-      Image_Id.src = "/components/1closed.png";
+      Image_Id.src = "/components/Work_icon.png";
   }
 } 

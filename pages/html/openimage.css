@@ -4,11 +4,18 @@
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
+@media only screen and (min-width: 600px) {
+  .textblock{
+    display: block;
+    height: auto;
+    width: 60%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .folderbox2{
     display: flex;
     justify-content:left;
-    background-color: rgb(118, 255, 209);
+    background-color: rgba(118, 255, 209, 0);
     height: auto;
     width: 90%;
     margin-left: 5%;
@@ -16,7 +23,7 @@
   .space{
     display:block;
     justify-content:center;
-    background-color: rgb(52, 202, 84);
+    background-color: rgba(52, 202, 84, 0);
     width: 100%;
     height: 100%;
   }
@@ -47,6 +54,18 @@
     margin-bottom: 1%;
     padding: 10px;
   }
+  .textblock{
+    display: block;
+    height: auto;
+  }
+  h2{
+    display: block;
+    text-align: left;
+    font-family:'Consolas';
+    font-size: 16px;
+    padding: 0;
+    font-weight: 100;
+  }
 }
 h1{
   text-align: left;
@@ -57,8 +76,8 @@ h1{
   padding-top: 20px;
 }
 .textblock{
-  position: relative;
-  max-width: 60%;
+  display: block;
+  max-width: 100%;
   height: auto;
   padding-left: 25px;
   padding-right: 25px;
@@ -84,7 +103,6 @@ h3{
   margin-left: 1%;
   width: fit-content;
   height: auto;
-  background-color: rgba(255, 255, 255, 0);
 }
 h4{
   text-align: right;
@@ -126,7 +144,7 @@ h5{
   font-weight: bold;
   border: 0;
   display: list-item;
-  width: 100px;
+  width: 150px;
 }
 .folderbox{
   display: flex;
@@ -213,7 +231,7 @@ a#btndrag5{
   display: inline-block;
   width: auto;
   height: fit-content;
-  background-color: rgb(255, 235, 205);
+  background-color: rgba(255, 235, 205, 0);
 }
 .leftanchor{
   display: inline-flex;
