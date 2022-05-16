@@ -29,6 +29,14 @@
     width: 90%;
     margin-left: 5%;
   }
+  .folderbox{
+    display: flex;
+    justify-content:left;
+    background-color: rgba(118, 255, 209, 0);
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+  }
   .space{
     display:block;
     justify-content:center;
@@ -153,18 +161,8 @@ h5{
   padding-top: 10px;
   font-weight: bold;
   border: 0;
-  display: list-item;
+  display:inline-flex;
   width: 150px;
-}
-.folderbox{
-  display: flex;
-  justify-content:left;
-  background-color: rgba(255, 0, 0, 0);
-  height: auto;
-  width: 100%;
-  margin-left: 25px;
-  margin-top: 10px;
-  background-color: blueviolet;
 }
 .dragfile{
   height: 100px;
@@ -252,4 +250,13 @@ a#btndrag5{
   justify-content: end;
   width: 50%;
   background-color: rgba(170, 56, 56, 0);
+}
+.filebuttons{
+  display: inline-flex;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+.folderbox2{
+  width: 50%;
 }
