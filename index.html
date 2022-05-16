@@ -7,18 +7,10 @@
   <link rel="stylesheet" href="./index.css">
   <script src="show.js"></script>
   <script src="hide.js"></script>
-  <script src="show2.js"></script>
-  <script src="show3.js"></script>
-  <script src="show4.js"></script>
-
+  <script src="/show5.js"></script>
+  <script src="/changeimg.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script language="javascript">
-    $(document).ready(function () {
-        $("#btndrag,#btndrag2,#btndrag3,#btndrag4,#btndrag5,#btndrag6,#btndrag7,#btndrag8").draggable({
-            cancel: false
-        });
-    });
 </script>
   <title>Trent Teinert</title>
 </head>
@@ -33,6 +25,31 @@
     the people to draw him in by their movement and routine.
     Distracting the mind and falling into sync with the environment.*/</h2>
   </div>
+  <input onclick="show5(),changeimg()" id="btnID1" class ="btnID1" type="image" src="/components/Work_icon.png"/>
+  <div class='folderbox2' id="folderbox" style="display:none;">
+  <div class="space">
+  <div class="desktop">
+  <div class="mainwindow">
+    <div class="window-id">
+      <div class="leftanchor">
+        <h3>Work</h3>
+      </div>
+      <div class="rightanchor">
+        <h5>?</h5>
+        <h4>X</h4>
+      </div>
+    </div>
+    <div class="iconholder">
+        <div class="icons"><a href="/pages/html/Construction_Zones.html" id="btndrag"><img src="/components/Construction_icon.png" class="dragfile"></a></div>
+        <div class="icons"><a href="/pages/html/NILMDTS.html" id="btndrag2"><img src="/components/NILMDTS_icon3.png" class="dragfile"></a></div>
+        <div class="icons"><a href="/pages/html/Harlingen_AGRI.html" id="btndrag3"><img src="/components/AGRI_icon.png" class="dragfile"></a></div>
+        <div class="icons"><a href="/pages/html/Harlingen.html" id="btndrag4"><img src="/components/Harlingen_icon.png" class="dragfile"></a></div>
+        <div class="icons"><a href="/pages/html/Disquiet.html" id="btndrag5"><img src="/components/Disquiet_icon.png" class="dragfile"></a></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
   <div class="expand">
     <button type="button"
       onclick="show()" id="contentbtnID1" style="display:inline-block;">bio_img.jpg ></button>
@@ -43,30 +60,7 @@
     <!-- img element without src attribute -->
     <img id="img1" src="/components/img1.jpg" style="display:none;" />
 </div>
-<div>
-  <input onclick="show2()" id="btnID1" class ="btnID1" type="button" value="Work >"/>
-  <ul class="nav-links" id="nav-links" style="display:none;">
-    <li><a href="/pages/html/Construction_Zones.html">Construction Zones - 2022</a></li>
-    <li><a href="/pages/html/NILMDTS.html">Now I Lay Me Down To Sleep - 2022</a></li>
-    <li><a href="/pages/html/Harlingen_AGRI.html">Harlingen AGRI - 2021</a></li>
-    <li><a href="/pages/html/Harlingen.html">Harlingen - 2020</a></li>
-    <li><a href="/pages/html/Disquiet.html">Disquiet - 2019</a></li>
-  </ul>
-</div>
-<input onclick="show4()" id="btnID1" class ="btnID1" type="button" value="Work >"/>
-  <div class='folderbox' id="folderbox" style="display:none;">
-    <a href="/pages/html/Construction_Zones.html" id="btndrag"><img src="/components/Construction_icon.png" class="dragfile"></a>
-    <a href="/pages/html/NILMDTS.html" id="btndrag2"><img src="/components/NILMDTS_icon3.png" class="dragfile"></a>
-    <a href="/pages/html/Harlingen_AGRI.html" id="btndrag3"><img src="/components/AGRI_icon.png" class="dragfile"></a>
-    <a href="/pages/html/Harlingen.html" id="btndrag4"><img src="/components/Harlingen_icon.png" class="dragfile"></a>
-    <a href="/pages/html/Disquiet.html" id="btndrag5"><img src="/components/Disquiet_icon.png" class="dragfile"></a>
-  </div>
 
-<input onclick="show3()" id="btnID1" class ="btnID1" type="button" value="CV >"/>
-<div class='folderbox2' id="folderbox2" style="display:none;">
-  <a href="/pages/html/CV.html" id="btndrag6"><img src="/components/CV_icon.png" class="dragfile2"></a>
-</div>
-</ul>
 
 
 </body>

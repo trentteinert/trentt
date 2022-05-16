@@ -10,6 +10,15 @@
     height: auto;
     width: 60%;
   }
+  .mainwindow{
+    display:block;
+    background-color: rgb(197, 197, 197);
+    height: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .folderbox2{
@@ -103,6 +112,7 @@ h3{
   margin-left: 1%;
   width: fit-content;
   height: auto;
+  background-color: rgba(0, 0, 0, 0);
 }
 h4{
   text-align: right;
@@ -189,25 +199,23 @@ a#btndrag5{
 }
 .desktop{
   display:flex;
-  justify-content:center;
+  justify-content:left;
   background-color: rgba(83, 83, 83, 0);
   width: 100%;
   height: 100%
 }
 .mainwindow{
   display:block;
-  background-color: rgb(197, 197, 197);
-  width: 100%;
+  background-color: rgb(112, 112, 112);
   height: 100%;
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 1%;
   margin-bottom: 10%;
-
 }
 .window-id{
   display:flex;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(209, 209, 209);
   width: 98%;
   margin-top:1%;
   margin-left: 1%;
@@ -218,7 +226,7 @@ a#btndrag5{
 }
 .iconholder{
   display:block;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(204, 204, 204);
   height:500px;
   width: 98%;
   margin-top: 1%;
