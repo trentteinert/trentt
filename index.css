@@ -19,10 +19,19 @@
     margin-top: 1%;
     margin-bottom: 10%;
   }
-  
-  
+  .img1{
+    width: 40%;
+    margin-left: 45px;
+    height: auto;
+  }
 }
 @media only screen and (max-width: 600px) {
+  .img1{
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: auto;
+  }
   .folderbox2{
     display: flex;
     justify-content:left;
@@ -258,4 +267,15 @@ a#btndrag5{
   justify-content: center;
   height: auto;
   width: auto;
+}
+.spacerwindow2{
+  display: inline-block;
+  background-color: rgba(25, 25, 233, 0);
+  width: 89.5px;
+  height: 100px;
+}
+.expand{
+  margin-left: 35px;
+  padding-top:10px;
+  padding-bottom:10px;
 }
