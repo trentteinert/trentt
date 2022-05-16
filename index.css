@@ -5,6 +5,12 @@
   background-color: rgb(255, 255, 255);
 }
 @media only screen and (min-width: 600px) {
+  .spacerwindow3{
+    display:block;
+    background-color: rgb(25, 25, 233);
+    width: 583px;
+    height: auto;
+  }
   .textblock{
     display: block;
     height: auto;
@@ -54,6 +60,15 @@
     padding-right: 1%;
     height: auto;
     background-color: rgba(0, 0, 0, 0);
+  }
+  .spacerwindow3{
+    display:block;
+    background-color: rgb(25, 25, 233);
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding-right: 1%;
+    height: auto;
   }
   .folderbox4{
     display: flex;
@@ -301,15 +316,6 @@ a#btndrag5{
   background-color: rgba(25, 25, 233, 0);
   width: 89.5px;
   height: 100px;
-}
-.spacerwindow3{
-  display:block;
-  background-color: rgba(25, 25, 233, 0);
-  width: 550px;
-  margin-left: 10px;
-  margin-right: 20px;
-  padding-right: 1%;
-  height: auto;
 }
 .expand{
   margin-left: 35px;
