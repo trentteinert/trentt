@@ -2,6 +2,7 @@ function show4(){
   var x = document.getElementById("folderbox");
   if (x.style.display === "none") {x.style.display = "flex";} 
     else {x.style.display = "none";}
-    if (event.target.value === "Work >") {event.target.value = "Work v";}
-    else {event.target.value = "Work >";}
+  var x = document.getElementById("folderbox2");
+  if (x.style.display === "flex") {x.style.display = "none";} 
+    else {x.style.display = "none";}
 }
