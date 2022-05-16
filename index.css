@@ -19,6 +19,8 @@
     margin-top: 1%;
     margin-bottom: 10%;
   }
+  
+  
 }
 @media only screen and (max-width: 600px) {
   .folderbox2{
@@ -256,7 +258,4 @@ a#btndrag5{
   justify-content: center;
   height: auto;
   width: auto;
-}
-.folderbox2{
-  width: 50%;
 }
