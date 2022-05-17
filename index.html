@@ -14,6 +14,19 @@
   <script src="/NILMDTS-JS/showbio.js"></script>
   <script src="/NILMDTS-JS/showimg1.js"></script>
   <script src="/NILMDTS-JS/showimg2.js"></script>
+  <script src="/NILMDTS-JS/showimg3.js"></script>
+  <script src="/NILMDTS-JS/showimg4.js"></script>
+  <script src="/NILMDTS-JS/showimg5.js"></script>
+  <script src="/NILMDTS-JS/showimg6.js"></script>
+  <script src="/NILMDTS-JS/showimg7.js"></script>
+  <script src="/NILMDTS-JS/showimg8.js"></script>
+  <script src="/NILMDTS-JS/showimg9.js"></script>
+  <script src="/NILMDTS-JS/showimg10.js"></script>
+  <script src="/NILMDTS-JS/showimg11.js"></script>
+  <script src="/NILMDTS-JS/showimg12.js"></script>
+  <script src="/NILMDTS-JS/showimg13.js"></script>
+  <script src="/NILMDTS-JS/showimg14.js"></script>
+
   <script src="/changeimg.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -40,7 +53,6 @@
       onclick="hide()" id="contentbtnID2" class="contentbtnID1" style="display:none;">bio_img.jpg v</button>
   </div>
   <div>
-    <!-- img element without src attribute -->
     <img class ='img1' id="img1" src="/components/img1.jpg" style="display:none;" />
 </div>
   <div class="filebuttons">
@@ -56,8 +68,8 @@
         <h3>Work</h3>
       </div>
       <div class="rightanchor">
-        <h5>?</h5>
-        <h4 onclick="show5()">X</h4>
+        <div class="questioncontainer"><h5>?</h5></div>
+        <div class="xcontainer"><h4 onclick="show5()">x</h4></div>
       </div>
     </div>
     <div class="iconholder">
@@ -67,9 +79,9 @@
         <div class="icons"><a href="/pages/html/Harlingen.html" id="btndrag4"><img src="/components/Harlingen_icon.png" class="dragfile"></a></div>
         <div class="icons"><a href="/pages/html/Disquiet.html" id="btndrag5"><img src="/components/Disquiet_icon.png" class="dragfile"></a></div>
     </div>
-  </div>
-  </div>
-  </div>
+    </div>
+    </div>
+    </div>
   </div>
   <div class='folderbox' id="folderbox" style="display:none;">
     <div class="space">
@@ -80,8 +92,8 @@
           <h3>CV</h3>
         </div>
         <div class="rightanchor">
-          <h5>?</h5>
-          <h4 onclick="show4()">X</h4>
+          <div class="questioncontainer"><h5>?</h5></div>
+          <div class="xcontainer"><h4 onclick="show4()">x</h4></div>
         </div>
       </div>
       <div class="iconholder">
@@ -105,8 +117,8 @@
             <h3>Construction Zones</h3>
           </div>
           <div class="rightanchor">
-            <h5>?</h5>
-            <h4 onclick="show6()">X</h4>
+            <div class="questioncontainer"><h5>?</h5></div>
+            <div class="xcontainer"><h4 onclick="show6()">x</h4></div>
           </div>
         </div>
         <div class="iconholder">
@@ -120,7 +132,7 @@
       </div>
       </div>
       </div>
-      </div>
+    </div>
       <div class='folderbox4' id="folderbox4" style="display:none;">
         <div class="space">
         <div class="desktop">
@@ -130,32 +142,63 @@
               <h3>Now I Lay Me Down To Sleep</h3>
             </div>
             <div class="rightanchor">
-              <h5>?</h5>
-              <h4 onclick="show7()">X</h4>
+              <div class="questioncontainer"><h5>?</h5></div>
+              <div class="xcontainer"><h4 onclick="show7()">x</h4></div>
             </div>
           </div>
           <div class="iconholder">
-              <button type="button"
-                onclick="showbio()" id="contentbtnID7" class="contentbtnID2" style="display:block;">bio.txt ></button>
-              <button type="button"
-                onclick="showbio()" id="contentbtnID8" class="contentbtnID2" style="display:none;">bio.txt v</button>
-              <div class="biotext" id="biotext" style="display:none;">/*I began to use walks as an escape from reality and problems, to zone out. I believe it's my lack of interactions as well that leads me to walk, in search for something I both want and don’t. I desire connection but, it is bittersweet. More so, I find that connections eventually cause pain. Acting selfishly myself, I feed off others' connections, to fill the void I own. Tending to stay at distance, examining how the photographs exposes the bond displayed.</div>                     
-              <button type="button"
-                onclick="showimg1()" id="contentbtnID3" class="contentbtnID2" style="display:block;">img1.jpg ></button>
-                <button type="button"
-                onclick="showimg1()" id="contentbtnID4" class="contentbtnID2" style="display:none;">img1.jpg v</button>
-                <img class ='img2' id="img2" src="/components/img1.jpg" style="display:none;" />
-                <button type="button"
-                onclick="showimg2()" id="contentbtnID5" class="contentbtnID2" style="display:block;">img2.jpg ></button>
-                <button type="button"
-                onclick="showimg2()" id="contentbtnID6" class="contentbtnID2" style="display:none;">img2.jpg v</button>
-                <img class ='img3' id="img3" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showbio()" id="contentbtnID7" class="contentbtnID2" style="display:block;">bio.txt ></button>
+              <button type="button" onclick="showbio()" id="contentbtnID8" class="contentbtnID2" style="display:none;">bio.txt v</button>
+              <div class="biotext" id="biotext" style="display:none;">/*I began to use walks as an escape from reality and problems, to zone out. I believe it's my lack of interactions as well that leads me to walk, in search for something I both want and don’t. I desire connection but, it is bittersweet. More so, I find that connections eventually cause pain. Acting selfishly myself, I feed off others' connections, to fill the void I own. Tending to stay at distance, examining how the photographs exposes the bond displayed.
+              </div>                     
+              <button type="button" onclick="showimg1()" id="contentbtnID3" class="contentbtnID2" style="display:block;">img1.jpg ></button>
+              <button type="button" onclick="showimg1()" id="contentbtnID4" class="contentbtnID2" style="display:none;">img1.jpg v</button>
+              <img class ='img2' id="img2" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg2()" id="contentbtnID5" class="contentbtnID2" style="display:block;">img2.jpg ></button>
+              <button type="button" onclick="showimg2()" id="contentbtnID6" class="contentbtnID2" style="display:none;">img2.jpg v</button>
+              <img class ='img2' id="img3" src="/components/img3.jpg" style="display:none;" />
+              <button type="button" onclick="showimg3()" id="contentbtnID9" class="contentbtnID2" style="display:block;">img3.jpg ></button>
+              <button type="button" onclick="showimg3()" id="contentbtnID10" class="contentbtnID2" style="display:none;">img3.jpg v</button>
+              <img class ='img4' id="img4" src="/components/img4.jpg" style="display:none;" />
+              <button type="button" onclick="showimg4()" id="contentbtnID11" class="contentbtnID2" style="display:block;">img4.jpg ></button>
+              <button type="button" onclick="showimg4()" id="contentbtnID12" class="contentbtnID2" style="display:none;">img4.jpg v</button>
+              <img class ='img5' id="img5" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg5()" id="contentbtnID13" class="contentbtnID2" style="display:block;">img5.jpg ></button>
+              <button type="button" onclick="showimg5()" id="contentbtnID14" class="contentbtnID2" style="display:none;">img5.jpg v</button>
+              <img class ='img6' id="img6" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg6()" id="contentbtnID15" class="contentbtnID2" style="display:block;">img6.jpg ></button>
+              <button type="button" onclick="showimg6()" id="contentbtnID16" class="contentbtnID2" style="display:none;">img6.jpg v</button>
+              <img class ='img7' id="img7" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg7()" id="contentbtnID17" class="contentbtnID2" style="display:block;">img7.jpg ></button>
+              <button type="button" onclick="showimg7()" id="contentbtnID18" class="contentbtnID2" style="display:none;">img7.jpg v</button>
+              <img class ='img8' id="img8" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg8()" id="contentbtnID19" class="contentbtnID2" style="display:block;">img8.jpg ></button>
+              <button type="button" onclick="showimg8()" id="contentbtnID20" class="contentbtnID2" style="display:none;">img8.jpg v</button>
+              <img class ='img9' id="img9" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg9()" id="contentbtnID21" class="contentbtnID2" style="display:block;">img9.jpg ></button>
+              <button type="button" onclick="showimg9()" id="contentbtnID22" class="contentbtnID2" style="display:none;">img9.jpg v</button>
+              <img class ='img10' id="img10" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg10()" id="contentbtnID23" class="contentbtnID2" style="display:block;">img10.jpg ></button>
+              <button type="button" onclick="showimg10()" id="contentbtnID24" class="contentbtnID2" style="display:none;">img10.jpg v</button>
+              <img class ='img11' id="img11" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg11()" id="contentbtnID25" class="contentbtnID2" style="display:block;">img11.jpg ></button>
+              <button type="button" onclick="showimg11()" id="contentbtnID26" class="contentbtnID2" style="display:none;">img11.jpg v</button>
+              <img class ='img12' id="img12" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg12()" id="contentbtnID27" class="contentbtnID2" style="display:block;">img12.jpg ></button>
+              <button type="button" onclick="showimg12()" id="contentbtnID28" class="contentbtnID2" style="display:none;">img12.jpg v</button>
+              <img class ='img13' id="img13" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg13()" id="contentbtnID29" class="contentbtnID2" style="display:block;">img13.jpg ></button>
+              <button type="button" onclick="showimg13()" id="contentbtnID30" class="contentbtnID2" style="display:none;">img13.jpg v</button>
+              <img class ='img14' id="img14" src="/components/img2.jpg" style="display:none;" />
+              <button type="button" onclick="showimg14()" id="contentbtnID31" class="contentbtnID2" style="display:block;">img14.jpg ></button>
+              <button type="button" onclick="showimg14()" id="contentbtnID32" class="contentbtnID2" style="display:none;">img14.jpg v</button>
+              <img class ='img15' id="img15" src="/components/img2.jpg" style="display:none;" />
               <div class="spacerwindow3"></div>
           </div>
         </div>
         </div>
         </div>
-        </div>
+      </div>
 </body>
 </html>
  
