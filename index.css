@@ -26,6 +26,36 @@
     padding: 0;
     margin-bottom: 5px;
   }
+  .biotext2{
+    background-color: rgba(0, 0, 255, 0);
+    width: 500px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: left;
+    font-family:'Consolas';
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .biotext3{
+    background-color: rgba(0, 0, 255, 0);
+    width: 500px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: left;
+    font-family:'Consolas';
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .biotext4{
+    background-color: rgba(0, 0, 255, 0);
+    width: 500px;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: left;
+    font-family:'Consolas';
+    padding: 0;
+    margin-bottom: 5px;
+  }
   .img1{
     width: 40%;
     margin-left: 45px;
@@ -62,6 +92,36 @@
 }
 @media only screen and (max-width: 600px) {
   .biotext{
+    text-align: left;
+    font-family:'Consolas';
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: auto;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .biotext2{
+    text-align: left;
+    font-family:'Consolas';
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: auto;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .biotext3{
+    text-align: left;
+    font-family:'Consolas';
+    width: 100%;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    height: auto;
+    background-color: rgba(240, 248, 255, 0);
+  }
+  .biotext4{
     text-align: left;
     font-family:'Consolas';
     width: 100%;
@@ -127,6 +187,22 @@
     margin-left: 5%;
   }
   .folderbox5{
+    display: flex;
+    justify-content:left;
+    background-color: rgba(118, 255, 209, 0);
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .folderbox6{
+    display: flex;
+    justify-content:left;
+    background-color: rgba(118, 255, 209, 0);
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .folderbox7{
     display: flex;
     justify-content:left;
     background-color: rgba(118, 255, 209, 0);
