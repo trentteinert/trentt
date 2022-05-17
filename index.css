@@ -126,6 +126,14 @@
     width: 90%;
     margin-left: 5%;
   }
+  .folderbox5{
+    display: flex;
+    justify-content:left;
+    background-color: rgba(118, 255, 209, 0);
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+  }
   .folderbox3{
     display: flex;
     justify-content:left;
@@ -211,9 +219,12 @@ h3{
   text-align: left;
   font-family:'Consolas';
   padding: 0;
-  font-size: 16px;
-  background-color: rgba(68, 255, 177, 0);
+  font-size: 13px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0);
+  padding-top: 2px;
   padding-left: 5px;
+  font-weight: 100;
 }
 h4{
   padding: 0;
@@ -334,7 +345,7 @@ a#btndrag5{
   width: auto;
   overflow-y:scroll;
   overflow-x: hidden;
-  margin: 5px;
+  margin: 4px;
 }
 .icons{
   display: inline-block;
@@ -384,10 +395,11 @@ a#btndrag5{
 .contentbtnID2{
   background-color: rgb(226, 226, 226);
   padding: 2px;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding-left: 5px;
+  padding-right: 5px;
   border: 2px;
-  border-style:ridge;
-  margin-top: 2px;
+  border-style:solid;
+  margin-top: 3px;
+  margin-left: 3px;
   border-color: rgb(143, 143, 143);
 }
