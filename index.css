@@ -513,4 +513,5 @@ a#btndrag5{
   padding: 8px;
   background-color: rgb(114, 114, 114);
   border: 2px solid rgb(255, 255, 255);
+  cursor: pointer;
 }
