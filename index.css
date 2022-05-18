@@ -7,12 +7,9 @@
 @media only screen and (min-width: 600px) {
   #lightbox img {
     width: auto;
-    max-width: 75%;
+    max-width: 90%;
     height: auto;
-    max-height: 75%;
-    padding: 8px;
-    background-color: rgb(114, 114, 114);
-    border: 2px solid rgb(255, 255, 255);
+    max-height: 90%;
   }
   .spacerwindow3{
     display:block;
