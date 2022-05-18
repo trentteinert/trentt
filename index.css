@@ -10,6 +10,9 @@
     max-width: 90%;
     height: auto;
     max-height: 90%;
+    border: 3px;
+    border-style: solid;
+    border-color: white;
   }
   .spacerwindow3{
     display:block;
@@ -115,11 +118,13 @@
 @media only screen and (max-width: 600px) {
   #lightbox img {
     width: auto;
-    max-width: 100%;
+    max-width: 98%;
     height: auto;
-    max-height: 100%;
-    padding: 3px;
+    max-height: 98%;
+    border: 3px;
+    border-style: solid;
     background-color: rgba(127, 255, 212, 0);
+    border-color: white;
   }
   .biotext{
     text-align: left;
@@ -519,7 +524,7 @@ a#btndrag5{
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.801);
+  background-color: rgba(155, 155, 155, 0.8);
   display: none;
 }
 #lightbox.active {
