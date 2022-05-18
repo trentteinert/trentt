@@ -491,3 +491,26 @@ a#btndrag5{
   margin-left: 3px;
   border-color: rgb(143, 143, 143);
 }
+#lightbox {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+  display: none;
+}
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#lightbox img {
+  width: auto;
+  max-width: 75%;
+  height: auto;
+  max-height: 75%;
+  padding: 8px;
+  background-color: rgb(114, 114, 114);
+  border: 2px solid rgb(255, 255, 255);
+}
