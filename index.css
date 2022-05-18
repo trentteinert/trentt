@@ -121,9 +121,8 @@
     max-width: 100%;
     height: auto;
     max-height: 100%;
-    padding: 8px;
-    background-color: rgb(114, 114, 114);
-    border: 2px solid rgb(255, 255, 255);
+    padding: 3px;
+    background-color: rgba(127, 255, 212, 0);
   }
   .biotext{
     text-align: left;
