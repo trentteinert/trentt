@@ -321,7 +321,7 @@ h4{
   font-family:'Consolas';
   text-align: center;
   font-size:14px;
-  transform: translateY(-10%);
+  transform: translateY(-7%);
   background-color: rgba(71, 166, 255, 0);
   cursor: pointer;
   height: 100%;
@@ -354,7 +354,7 @@ h5{
   font-family:'Consolas';
   text-align: center;
   font-size:14px;
-  transform: translateY(2%);
+  transform: translateY(-5%);
   background-color: rgba(71, 166, 255, 0);
   cursor: pointer;
   height: 100%;
