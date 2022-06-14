@@ -88,8 +88,8 @@
 
 </head>
 <body>
-  <h1>Trent Teinert</h1>
-  <div class="textblock">
+  <h1 id="h1">Trent Teinert</h1>
+  <div id="textblock" class="textblock">
     <h2>/*is a photographer currently residing in the Lower
     East Side of Manhattan. his current work falls somewhere
     between portraiture and landscape, working almost as environmental
@@ -98,7 +98,7 @@
     the people to draw him in by their movement and routine.
     Distracting the mind and falling into sync with the environment.*/</h2>
   </div>
-  <div class="expand">
+  <div id="expand" class="expand">
     <button type="button"
       onclick="show()" id="contentbtnID1" class="contentbtnID1" style="display:block;">bio_img.jpg ></button>
     <button type="button"
@@ -107,7 +107,7 @@
   <div>
     <img class ='img1' id="img1" src="/components/img1.jpg" style="display:none;" />
 </div>
-  <div class="filebuttons">
+  <div id="filebuttons" class="filebuttons">
   <input onclick="show5(),changeimg()" id="btnID1" class ="btnID1" type="image" src="/components/Work_icon.png"/>
   <input onclick="show4(),changeimg2()" id="btnID002" class ="btnID1" type="image" src="/components/CV_icon.png"/>
   </div>
@@ -121,7 +121,7 @@
       </div>
       <div class="rightanchor">
         <div class="questioncontainer"><h5>?</h5></div>
-        <div class="xcontainer"><h4 onclick="show5()">x</h4></div>
+        <div class="xcontainer"><h4 onclick="show5(),changeimg()">x</h4></div>
       </div>
     </div>
     <div class="iconholder">
@@ -145,12 +145,11 @@
         </div>
         <div class="rightanchor">
           <div class="questioncontainer"><h5>?</h5></div>
-          <div class="xcontainer"><h4 onclick="show4()">x</h4></div>
+          <div class="xcontainer"><h4 onclick="show4(),changeimg2()">x</h4></div>
         </div>
       </div>
       <div class="iconholder">
-          <div class="icons"><a href="/pages/html/CV.html" id="btndrag"><img src="/components/CV_icon2.png" class="dragfile"></a></div>
-          <input type="image" src="/components/CV_icon2.png" href="/pages/html/CV.html" class="dragfile"/>
+          <div class="icons"><a href="/pages/html/CV.html" class="icons" id="btndrag"><img src="/components/CV_icon2.png" class="dragfile"></a></div>
           <div class="spacerwindow2"></div>
           <div class="spacerwindow2"></div>
           <div class="spacerwindow2"></div>
@@ -171,11 +170,11 @@
           </div>
           <div class="rightanchor">
             <div class="questioncontainer"><h5 onclick="backtowork()"><</h5></div>
-            <div class="xcontainer"><h4 onclick="show6()">x</h4></div>
+            <div class="xcontainer"><h4 onclick="show6(),changeimg()">x</h4></div>
           </div>
         </div>
         <div class="iconholder">
-            <div class="icons"><a href="https://stirring-naiad-fd6c5b.netlify.app/" target="_blank" id="btndrag"><img src="/components/Construction_html_icon.png" class="dragfile"></a></div>
+            <div class="icons"><a href="https://stirring-naiad-fd6c5b.netlify.app/" target="_blank" class="icons" id="btndrag"><img src="/components/Construction_html_icon.png" class="dragfile"></a></div>
             <div class="spacerwindow2"></div>
             <div class="spacerwindow2"></div>
             <div class="spacerwindow2"></div>
@@ -196,7 +195,7 @@
             </div>
             <div class="rightanchor">
               <div class="questioncontainer"><h5 onclick="backtowork()"><</h5></div>
-              <div class="xcontainer"><h4 onclick="show7()">x</h4></div>
+              <div class="xcontainer"><h4 onclick="show7(),changeimg()">x</h4></div>
             </div>
           </div>
           <div class="iconholder">
@@ -262,7 +261,7 @@
             </div>
             <div class="rightanchor">
               <div class="questioncontainer"><h5 onclick="backtowork()"><</h5></div>
-              <div class="xcontainer"><h4 onclick="show8()">x</h4></div>
+              <div class="xcontainer"><h4 onclick="show8(),changeimg()">x</h4></div>
             </div>
           </div>
           <div class="iconholder">
@@ -340,7 +339,7 @@
             </div>
             <div class="rightanchor">
               <div class="questioncontainer"><h5 onclick="backtowork()"><</h5></div>
-              <div class="xcontainer"><h4 onclick="show9()">x</h4></div>
+              <div class="xcontainer"><h4 onclick="show9(),changeimg()">x</h4></div>
             </div>
           </div>
           <div class="iconholder">
@@ -430,7 +429,7 @@
             </div>
             <div class="rightanchor">
               <div class="questioncontainer"><h5 onclick="backtowork()"><</h5></div>
-              <div class="xcontainer"><h4 onclick="show10()">x</h4></div>
+              <div class="xcontainer"><h4 onclick="show10(),changeimg()">x</h4></div>
             </div>
           </div>
           <div class="iconholder">

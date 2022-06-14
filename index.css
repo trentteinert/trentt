@@ -14,6 +14,15 @@
     border-style: solid;
     border-color: white;
   }
+  h1{
+    text-align: left;
+    display: block;
+    font-family:'Inconsolata';
+    font-size: 26px;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
   .spacerwindow3{
     display:block;
     background-color: rgb(25, 25, 233);
@@ -129,6 +138,15 @@
     border-style: solid;
     background-color: rgba(127, 255, 212, 0);
     border-color: white;
+  }
+  h1{
+    text-align: left;
+    display: block;
+    font-family:'Inconsolata';
+    font-size: 16px;
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 20px;
   }
   .biotext{
     text-align: left;
@@ -316,14 +334,6 @@
     font-weight: 400;
   }
 }
-h1{
-  text-align: left;
-  font-family:'Inconsolata';
-  font-size: 16px;
-  padding: 0;
-  padding-left: 20px;
-  padding-top: 20px;
-}
 .textblock{
   display: block;
   max-width: 100%;
@@ -398,37 +408,16 @@ h5{
   text-align: left;
   font-family:'Inconsolata';
   font-size: 16px;
-  padding: 0;
-  padding-left: 35px;
-  padding-top: 10px;
   font-weight: bold;
-  border: 0;
-  display:inline-flex;
-  width: 150px;
+  display:block;
+  width: 120px;
+  justify-content: center;
 }
 .dragfile{
   height: 100px;
   width: auto;
   background-color: rgba(0, 0, 255, 0);
   padding: 0;
-}
-a#btndrag{
-  background-color: rgba(0, 0, 0, 0);
-}
-a#btndrag2{
-  background-color: rgba(0, 0, 0, 0);
-}
-a#btndrag3{
-  background-color: rgba(0, 0, 0, 0);
-
-}
-a#btndrag4{
-  background-color: rgba(0, 0, 0, 0);
-
-}
-a#btndrag5{
-  background-color: rgba(0, 0, 0, 0);
-
 }
 .space{
   display:block;
@@ -469,10 +458,10 @@ a#btndrag5{
   margin: 4px;
 }
 .icons{
-  display: inline-block;
+  height: 100px;
   width: auto;
-  height: fit-content;
-  background-color: rgba(255, 235, 205, 0);
+  background-color: rgba(0, 0, 255, 0);
+  padding: 0;
 }
 .leftanchor{
   display:flex;
@@ -489,9 +478,10 @@ a#btndrag5{
 }
 .filebuttons{
   display: inline-flex;
-  justify-content: center;
+  justify-content: left;
   height: auto;
-  width: auto;
+  margin-left: 10px;
+  width: 100%;
 }
 .spacerwindow2{
   display: inline-block;
