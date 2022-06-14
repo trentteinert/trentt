@@ -14,14 +14,44 @@
     border-style: solid;
     border-color: white;
   }
+  .contentbtnID1{
+    background-color: rgba(79, 255, 217, 0);
+    padding: 2px;
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 25%;
+    border: 1px;
+    border-style:ridge;
+    border-color: rgb(143, 143, 143);
+    font-family:'Inconsolata';
+  }
+  .expand{
+    padding-top:10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-bottom:10px;
+    background-color: rgba(0, 0, 255, 0);
+  }
   h1{
     text-align: left;
-    display: block;
+    display: flex;
+    justify-content: center;
     font-family:'Inconsolata';
     font-size: 26px;
-    padding: 0;
-    padding-left: 20px;
     padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  h2{
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    font-family:'Inconsolata';
+    font-size: 16px;
+    width: 50%;
+    font-weight: normal;
+    padding: 0px;
   }
   .spacerwindow3{
     display:block;
@@ -30,9 +60,10 @@
     height: auto;
   }
   .textblock{
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: auto;
-    width: 60%;
   }
   .biotext{
     background-color: rgba(0, 0, 255, 0);
@@ -42,7 +73,6 @@
     text-transform: lowercase;
     text-align: left;
     font-family:'Inconsolata';
-    padding: 0;
     margin-bottom: 5px;
   }
   .biotext2{
@@ -80,7 +110,8 @@
   }
   .img1{
     width: 40%;
-    margin-left: 45px;
+    display: flex;
+    margin-left: 25%;
     height: auto;
   }
   .img2{
@@ -127,6 +158,13 @@
     background-color: rgba(182, 50, 50, 0);
     cursor: pointer;
   }
+  .folderbox2{
+    display: flex;
+    justify-content:center;
+    background-color: rgba(118, 255, 209, 0);
+    height: auto;
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   #lightbox img {
@@ -139,14 +177,34 @@
     background-color: rgba(127, 255, 212, 0);
     border-color: white;
   }
+  .expand{
+    padding-top:10px;
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    padding-bottom:10px;
+    background-color: rgba(0, 0, 255, 0);
+  }
+  .contentbtnID1{
+    background-color: rgba(79, 255, 217, 0);
+    padding: 2px;
+    display: flex;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 5%;
+    border: 1px;
+    border-style:ridge;
+    border-color: rgb(143, 143, 143);
+    font-family:'Inconsolata';
+  }
   h1{
     text-align: left;
-    display: block;
+    display: flex;
+    justify-content: center;
     font-family:'Inconsolata';
     font-size: 16px;
-    padding: 0;
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
   .biotext{
     text-align: left;
@@ -316,39 +374,27 @@
   }
   .mainwindow{
     display: block;
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(206, 49, 49);
     width:100%;
     height: 100%;
     margin: 0;
   }
   .textblock{
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: auto;
   }
   h2{
-    display: block;
+    display: flex;
     text-align: left;
+    justify-content: center;
     font-family:'Inconsolata';
     font-size: 16px;
-    padding: 0;
-    font-weight: 400;
+    width: 90%;
+    font-weight: normal;
+    padding: 0px;
   }
-}
-.textblock{
-  display: block;
-  max-width: 100%;
-  height: auto;
-  padding-left: 25px;
-  padding-right: 25px;
-
-}
-h2{
-  text-align: left;
-  font-family:'Inconsolata';
-  text-transform: lowercase;
-  font-size: 16px;
-  padding: 0;
-  font-weight: 400;
 }
 h3{
   font-family:'Inconsolata';
@@ -428,7 +474,7 @@ h5{
 }
 .desktop{
   display:flex;
-  justify-content:left;
+  justify-content:center;
   background-color: rgba(83, 83, 83, 0);
   width: 100%;
   height: 100%
@@ -478,9 +524,9 @@ h5{
 }
 .filebuttons{
   display: inline-flex;
-  justify-content: left;
+  justify-content: center;
   height: auto;
-  margin-left: 10px;
+  margin-top: 20px;
   width: 100%;
 }
 .spacerwindow2{
@@ -488,22 +534,6 @@ h5{
   background-color: rgba(25, 25, 233, 0);
   width: 89.5px;
   height: 100px;
-}
-.expand{
-  margin-left: 35px;
-  padding-top:10px;
-  padding-bottom:10px;
-  background-color: rgba(0, 0, 255, 0);
-}
-.contentbtnID1{
-  background-color: rgba(79, 255, 217, 0);
-  padding: 2px;
-  padding-left: 1%;
-  padding-right: 1%;
-  border: 1px;
-  border-style:ridge;
-  border-color: rgb(143, 143, 143);
-  font-family:'Inconsolata';
 }
 .contentbtnID2{
   background-color: rgb(226, 226, 226);
