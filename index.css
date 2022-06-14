@@ -14,6 +14,16 @@
     border-style: solid;
     border-color: white;
   }
+  .mainwindow{
+    display:block;
+    background-color: rgb(131, 131, 131);
+    height: 100%;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 10%;
+  }
   .contentbtnID1{
     background-color: rgba(79, 255, 217, 0);
     padding: 2px;
@@ -162,7 +172,7 @@
     display: flex;
     justify-content:center;
     background-color: rgba(118, 255, 209, 0);
-    height: auto;
+    height: 50%;
     width: 100%;
   }
 }
@@ -373,11 +383,13 @@
     height: 100%
   }
   .mainwindow{
-    display: block;
-    background-color: rgb(206, 49, 49);
-    width:100%;
+    display:block;
+    background-color: rgb(131, 131, 131);
     height: 100%;
-    margin: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 10%;
   }
   .textblock{
     display: flex;
@@ -479,15 +491,6 @@ h5{
   width: 100%;
   height: 100%
 }
-.mainwindow{
-  display:block;
-  background-color: rgb(131, 131, 131);
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 1%;
-  margin-bottom: 10%;
-}
 .window-id{
   display:flex;
   background-color: rgb(209, 209, 209);
@@ -497,7 +500,7 @@ h5{
 .iconholder{
   display:block;
   background-color: rgb(226, 226, 226);
-  height:500px;
+  height:450px;
   width: auto;
   overflow-y:scroll;
   overflow-x: hidden;
@@ -523,11 +526,12 @@ h5{
   background-color: rgba(170, 56, 56, 0);
 }
 .filebuttons{
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   height: auto;
   margin-top: 20px;
   width: 100%;
+  background-color: rgba(0, 0, 255, 0);
 }
 .spacerwindow2{
   display: inline-block;
