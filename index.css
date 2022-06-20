@@ -25,7 +25,7 @@
   .iconholder{
     display:block;
     background-color: rgb(226, 226, 226);
-    height:550px;
+    height:500px;
     width: auto;
     overflow-y:scroll;
     overflow-x: hidden;
@@ -137,9 +137,9 @@
     height: auto;
   }
   .img2{
-    width: auto;
+    max-height: 460px;
+    max-width: 500px;
     height: auto;
-    max-height: 350px;
     margin-left: 5px;
     margin-top: 5px;
     margin-right: 5px;
@@ -215,7 +215,7 @@
     margin-left: 5%;
     border: 1px;
     border-style:ridge;
-    color: rgb(88, 88, 88);
+    color: rgb(43, 43, 43);
     border-color: rgb(143, 143, 143);
     font-family:'Inconsolata';
   }
@@ -365,8 +365,7 @@
     justify-content:left;
     background-color: rgba(118, 255, 209, 0);
     height: auto;
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
   }
   .folderbox{
     display: flex;
@@ -424,6 +423,15 @@
     overflow-x: hidden;
     margin: 4px;
   }
+  .iconholdermax{
+    display:block;
+    background-color: rgb(226, 226, 226);
+    height:750px;
+    width: 300px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    margin: 4px;
+  }
   .filebuttons{
     display: flex;
     justify-content: left;
@@ -462,6 +470,17 @@ h4{
   justify-content: center;
   align-items: center;
   background-color: rgb(255, 116, 116);
+  margin-top: 2px;
+  margin-right: 2px;
+  height:16px;
+  width: 20px;
+  cursor: pointer;
+}
+.maxcontainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(165, 236, 187);
   margin-top: 2px;
   margin-right: 2px;
   height:16px;
@@ -551,15 +570,15 @@ h5{
   height: 100px;
 }
 .contentbtnID2{
-  background-color: rgb(226, 226, 226);
+  background-color: rgba(79, 255, 217, 0);
   padding: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 2px;
-  border-style:solid;
-  margin-top: 3px;
-  margin-left: 3px;
-  color: rgb(51, 51, 51);
+  display: flex;
+  padding-left: 1%;
+  padding-right: 1%;
+  margin: 3px;
+  border: 1px;
+  border-style:ridge;
+  color: rgb(43, 43, 43);
   border-color: rgb(143, 143, 143);
   font-family:'Inconsolata';
 }

@@ -17,6 +17,8 @@
   <script defer src="/show8.js"></script>
   <script defer src="/show9.js"></script>
   <script defer src="/show10.js"></script>
+  <script defer src="/show12.js"></script>
+  <script defer src="/maximize.js"></script>
   <script defer src="/NILMDTS-JS/showbio.js"></script>
   <script defer src="/NILMDTS-JS/showimg1.js"></script>
   <script defer src="/NILMDTS-JS/showimg2.js"></script>
@@ -89,7 +91,7 @@
 </head>
 <body>
   <h1 id="h1">Trent Teinert</h1>
-  <div id="textblock" class="textblock">
+  <div id="textblock" class="textblock" style="display:flex;">
     <h2>Is a photographer currently residing in the Lower
     East Side of Manhattan. His current work falls
     in between portraiture and landscape, working as environmental
@@ -98,7 +100,7 @@
     the people to draw him in by their movement and routine.
     Distracting the mind and falling into sync with the environment.</h2>
   </div>
-  <div id="expand" class="expand">
+  <div id="expand" class="expand" style="display:flex;">
     <button type="button"
       onclick="show()" id="contentbtnID1" class="contentbtnID1" style="display:block;">bio_img.jpg ></button>
     <button type="button"
@@ -107,7 +109,7 @@
   <div>
     <img class ='img1' id="img1" src="/components/img1.jpg" style="display:none;" />
 </div>
-  <div id="filebuttons" class="filebuttons">
+  <div id="filebuttons" class="filebuttons" style="display:flex;">
   <input onclick="show5(),changeimg()" id="btnID1" class ="btnID1" type="image" src="/components/Work_icon.png"/>
   <input onclick="show4(),changeimg2()" id="btnID002" class ="btnID1" type="image" src="/components/CV_icon.png"/>
   </div>
@@ -121,6 +123,7 @@
       </div>
       <div class="rightanchor">
         <div class="questioncontainer"><h5>?</h5></div>
+        <div class="maxcontainer" onclick="show12(),maximize()"><h5>oi</h5></div>
         <div class="xcontainer" onclick="show5(),changeimg()"><h4>x</h4></div>
       </div>
     </div>
