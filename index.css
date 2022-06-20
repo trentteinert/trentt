@@ -578,6 +578,7 @@ h5{
   margin: 3px;
   border: 1px;
   border-style:ridge;
+  cursor: pointer;
   color: rgb(43, 43, 43);
   border-color: rgb(143, 143, 143);
   font-family:'Inconsolata';
