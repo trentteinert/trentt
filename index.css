@@ -215,6 +215,7 @@
     margin-left: 5%;
     border: 1px;
     border-style:ridge;
+    color: rgb(88, 88, 88);
     border-color: rgb(143, 143, 143);
     font-family:'Inconsolata';
   }
@@ -558,6 +559,7 @@ h5{
   border-style:solid;
   margin-top: 3px;
   margin-left: 3px;
+  color: rgb(51, 51, 51);
   border-color: rgb(143, 143, 143);
   font-family:'Inconsolata';
 }
