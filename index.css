@@ -14,10 +14,18 @@
     border-style: solid;
     border-color: white;
   }
+  .filebuttons{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+  }
   .iconholder{
     display:block;
     background-color: rgb(226, 226, 226);
-    height:405px;
+    height:550px;
     width: auto;
     overflow-y:scroll;
     overflow-x: hidden;
@@ -31,7 +39,6 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 1%;
-    margin-bottom: 10%;
   }
   .contentbtnID1{
     background-color: rgba(79, 255, 217, 0);
@@ -89,7 +96,6 @@
     width: 500px;
     margin-left: 5px;
     margin-top: 5px;
-    text-transform: lowercase;
     text-align: left;
     font-family:'Inconsolata';
     margin-bottom: 5px;
@@ -101,7 +107,6 @@
     margin-top: 5px;
     text-align: left;
     font-family:'Inconsolata';
-    text-transform: lowercase;
     padding: 0;
     margin-bottom: 5px;
   }
@@ -112,7 +117,6 @@
     margin-top: 5px;
     text-align: left;
     font-family:'Inconsolata';
-    text-transform: lowercase;
     padding: 0;
     margin-bottom: 5px;
   }
@@ -123,14 +127,13 @@
     margin-top: 5px;
     text-align: left;
     font-family:'Inconsolata';
-    text-transform: lowercase;
     padding: 0;
     margin-bottom: 5px;
   }
   .img1{
-    width: 40%;
+    width: 49.5%;
     display: flex;
-    margin-left: 25%;
+    margin-left: 25.5%;
     height: auto;
   }
   .img2{
@@ -217,12 +220,12 @@
   }
   h1{
     text-align: left;
-    display: flex;
-    justify-content: center;
     font-family:'Inconsolata';
     font-size: 16px;
     padding-top: 10px;
     padding-bottom: 5px;
+    padding-left: 7%;
+    background-color: rgba(0, 0, 255, 0);
   }
   .biotext{
     text-align: left;
@@ -231,7 +234,6 @@
     padding-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    text-transform: lowercase;
     height: auto;
     background-color: rgba(240, 248, 255, 0);
   }
@@ -242,7 +244,6 @@
     padding-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    text-transform: lowercase;
     height: auto;
     background-color: rgba(240, 248, 255, 0);
   }
@@ -253,7 +254,6 @@
     padding-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    text-transform: lowercase;
     height: auto;
     background-color: rgba(240, 248, 255, 0);
   }
@@ -264,7 +264,6 @@
     padding-top: 1%;
     padding-left: 1%;
     padding-right: 1%;
-    text-transform: lowercase;
     height: auto;
     background-color: rgba(240, 248, 255, 0);
   }
@@ -424,6 +423,15 @@
     overflow-x: hidden;
     margin: 4px;
   }
+  .filebuttons{
+    display: flex;
+    justify-content: left;
+    height: auto;
+    margin-top: 20px;
+    padding-left: 5px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+  }
 }
 h3{
   font-family:'Inconsolata';
@@ -457,12 +465,14 @@ h4{
   margin-right: 2px;
   height:16px;
   width: 20px;
+  cursor: pointer;
 }
 .questioncontainer{
   display:flex;
   background-color: rgb(158, 158, 158);
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   margin-top: 2px;
   margin-right: 2px;
   padding-top: 0;
@@ -532,14 +542,6 @@ h5{
   justify-content: right;
   width: 25%;
   background-color: rgba(170, 56, 56, 0);
-}
-.filebuttons{
-  display: flex;
-  justify-content: center;
-  height: auto;
-  margin-top: 20px;
-  width: 100%;
-  background-color: rgba(0, 0, 255, 0);
 }
 .spacerwindow2{
   display: inline-block;
