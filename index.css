@@ -62,12 +62,12 @@
   }
   h1{
     text-align: left;
-    display: flex;
-    justify-content: center;
     font-family:'Inconsolata';
-    font-size: 26px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    width: 30%;
+    transform: translateY(3px);
+    height: fit-content;
+    background-color: rgba(137, 43, 226, 0);
   }
   h2{
     display: flex;
@@ -79,9 +79,29 @@
     font-weight: normal;
     padding: 0px;
   }
+  .h6{
+    font-family:'Inconsolata';
+    font-size: 12px;
+    text-align: right;
+    width: 20%;
+    font-weight: normal;
+    height: fit-content;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    transform: translateY(8px);
+    background-color: rgba(0, 0, 255, 0);
+  }
+  .header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 28px;
+    background-color: rgba(0, 255, 255, 0);
+  }
   .spacerwindow3{
     display:block;
-    background-color: rgb(25, 25, 233);
+    background-color: rgba(25, 25, 233, 0);
     width: 583px;
     height: auto;
   }
