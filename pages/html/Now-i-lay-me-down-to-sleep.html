@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="/pages/html/NOW.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOW</title>
+</head>
+<body>
+  <div class="menu">
+    <a class="nav" href="trentteinert.com/bleh">Harlingen</a>
+    <a class="nav" href="trentteinert.com/bleh">Harlingen AGRI</a>
+    <a class="nav" href="trentteinert.com/bleh">Now I Lay Me Down To Sleep</a>
+    <a class="nav" href="trentteinert.com/bleh">Construction Zones</a>
+    <a class="nav" href="trentteinert.com/bleh">Disquiet</a>
+  </div>
+    <div class="left">
+      <div class="tittle">Trent Teinert</div>
+      <a class="contact" href="mailto:trentteinert@gmail.com">contact@trentteinert.com</a><br/>
+      <div id="bioexpand" class="bioexpand" onclick="showbio()">+ bio
+      </div>
+      <div id="bioclose" class="bioexpand" onclick="showbio()" style="display:none;">- bio
+      </div>
+      <div id="bio" class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident sint possimus tempora iure ab velit voluptatum consectetur, veritatis voluptatibus. Odit quod laborum necessitatibus, cumque asperiores nihil illum incidunt cupiditate molestiae omnis velit officiis enim, atque voluptatem vel sunt harum autem similique id impedit labore perspiciatis. Laudantium esse commodi veritatis culpa sed eius at, quis, quibusdam est nemo, corrupti cumque?</div>
+      <a id="bioexpand" class="bioexpand" href="./CV.html">+ CV</a>
+    </div>
+    <div class="right">
+      <div class="burger">menu</div>
+    </div>
+  </div>
+  <div class="slidebtn-holder">
+  <div id="opengallery" class="gallerybtn" onclick="showgallery(), opengalleryscript()" style="display: flex;">+ Gallery</div>
+  <div id="closegallery" class="gallerybtn" onclick="showgallery(), closegalleryscript()" style="display:none;">- Gallery</div>
+  <button class="slidebtn-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="slidebtn-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <div id="Slideshow" class="Slideshow" style="display:flex;">
+    <img class="img1" onclick="plusDivs(1)" src="/components/NILMDTS/NOW (13).jpg">
+    <img class="img1" onclick="plusDivs(1)"src="/components/NILMDTS/NOW (14).jpg" style="display:none">
+    <img class="img1" onclick="plusDivs(1)"src="/components/NILMDTS/NOW (15).jpg" style="display:none">
+    <img class="img1" onclick="plusDivs(1)"src="/components/NILMDTS/NOW (6).jpg" style="display:none">
+  </div>
+  <div class="galleryview" id="galleryview" style="display:none;">
+    <img class="img2" onclick="gallerytoslide(1)" src="/components/NILMDTS/NOW (13).jpg" style="cursor:pointer;">
+    <img class="img2" src="/components/NILMDTS/NOW (15).jpg">
+    <img class="img2" onclick="gallerytoslide(3)" src="/components/NILMDTS/NOW (3).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (13).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (15).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (14).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (13).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (15).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (14).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (13).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (15).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (14).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (14).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (13).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (15).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (14).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (13).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (15).jpg">
+    <img class="img2" src="/components/NILMDTS/NOW (14).jpg">
+  </div>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("img1");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+
+    function showbio() {
+  var x = document.getElementById("bioexpand");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bioclose");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+function showgallery() {
+  var x = document.getElementById("opengallery");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+  var x = document.getElementById("closegallery");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+function closegalleryscript() {
+  var x = document.getElementById("Slideshow");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+  var x = document.getElementById("galleryview");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+function opengalleryscript() {
+  var x = document.getElementById("Slideshow");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+  var x = document.getElementById("galleryview");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+    </script>
+</body>
+</html>

@@ -4,6 +4,10 @@
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
 @media only screen and (min-width: 600px) {
   #lightbox img {
     width: auto;
@@ -71,8 +75,7 @@
   }
   h2{
     display: flex;
-    text-align: left;
-    justify-content: center;
+    text-align: justify;
     font-family:'Inconsolata';
     font-size: 16px;
     width: 50%;
