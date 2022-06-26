@@ -208,6 +208,7 @@
     background-color: rgba(118, 255, 209, 0);
     height: 50%;
     width: 100%;
+    padding-bottom: 30px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -373,6 +374,7 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 30px;
   }
   .folderbox5{
     display: flex;
@@ -381,6 +383,7 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 30px;
   }
   .folderbox6{
     display: flex;
@@ -389,6 +392,7 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 30px;
   }
   .folderbox7{
     display: flex;
@@ -397,6 +401,7 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 30px;
   }
   .folderbox3{
     display: flex;
@@ -405,6 +410,7 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 30px;
   }
   .folderbox2{
     display: flex;
@@ -412,6 +418,7 @@
     background-color: rgba(118, 255, 209, 0);
     height: auto;
     width: 100%;
+    padding-bottom: 30px;
   }
   .folderbox{
     display: flex;
@@ -420,6 +427,7 @@
     height: auto;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 30px;
   }
   .space{
     display:block;
