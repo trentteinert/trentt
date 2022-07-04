@@ -177,6 +177,11 @@
     width: 100%;
     background-color: rgba(127, 255, 212, 0);
   }
+  .mySlides3 {
+    display: none;
+    width: 100%;
+    background-color: rgba(127, 255, 212, 0);
+  }
   
   /* Add a pointer when hovering over the thumbnail images */
   .cursor {

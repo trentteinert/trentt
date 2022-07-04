@@ -1,0 +1,748 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family:'Inconsolata';
+  background-color: var(--primary-color);
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+:root{
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: #222;
+}
+.dark-theme{
+  --primary-color: #222;
+  --secondary-color: rgb(150, 150, 150);
+}
+.Slideshow{
+  display:flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 255);
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+.darkmode{
+  width: 25px;
+  height: 25px;
+  margin: 20px;
+  right: 0;
+  position:absolute;
+  background-color: rgba(0, 0, 255, 0);
+}
+.left{
+  background-color: rgba(49, 0, 95, 0);
+  width:300px;
+  position: absolute;
+  width: 15%;
+  margin-left: 100px;
+  margin-top: 70px;
+  height:80px;
+}
+.right{
+  display: inline-flex;
+  float: right;
+  height: 130px;
+  background-color: rgba(43, 226, 73, 0);
+  width:0%;
+  margin-top: 20px;
+}
+  .tittle{
+    display: flex;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    font-size: 1em;
+    background-color: rgba(79, 116, 197, 0);
+    font-weight: 600;
+    color: rgb(104, 105, 107);
+    width:fit-content;
+    height:fit-content;
+  }
+  .contact{
+    font-family: 'Inconsolata';
+    font-size: 1em;
+    font-weight: 400;
+    background-color: rgba(123, 255, 0, 0);
+    text-align: left;
+    color: rgb(150, 150, 150);
+    width:fit-content;
+    height: fit-content;
+    text-decoration: none;
+  }
+  .bio{
+    display:none;
+    font-size: .8em;
+    line-height: 20px;
+    position: absolute;
+    background-color:rgba(153, 59, 59, 0);
+    text-align: justify;
+    color:var(--secondary-color);
+    width: 240px;
+    padding:10px;
+    height: fit-content;
+    left:92px;
+    top:130px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  .bioexpand{
+    display: inline;
+    font-size: .9em;
+    background-color: rgba(15, 247, 255, 0);
+    text-align: left;
+    color: rgb(150, 150, 150);
+    width:fit-content;
+    text-decoration: none;
+    cursor: pointer;
+    height: fit-content;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  .contactexpand{
+    display: inline;
+    font-size: .9em;
+    background-color: rgba(135, 218, 80, 0);
+    text-align: left;
+    color: rgb(150, 150, 150);
+    width:fit-content;
+    cursor: pointer;
+    height: fit-content;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  .work{
+    text-decoration: none;
+  }
+  .work1{
+    font-size: .8em;
+    background-color:rgba(153, 59, 59, 0);
+    text-align: justify;
+    color:var(--secondary-color);
+    width: 18%;
+    padding:0px;
+    padding-bottom:10px;
+    height:fit-content;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+  .workmenu{
+    display:none;
+    position: absolute;
+    width: 100%;
+    left: 102px;
+    top:145px;
+    height: fit-content;
+    color:var(--secondary-color);
+    background-color: rgba(0, 0, 255, 0);
+  }
+  .bioexpand .show{
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  @keyframes fade-inout{
+    0%{ opacity: 0;}
+    100%{ opacity: 1;}
+  }
+  @-webkit-keyframes fadeIn {
+    from {opacity:0;}
+    to {opacity:1;}
+  }
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+  .burger{
+    display: none;
+  }
+  .nav{
+    display: flex;
+    height: 20px;
+    text-align: center;
+    color: black;
+    background-color: rgba(127, 255, 212, 0);
+  }
+  .container {
+    display: block;
+      position: relative;
+      width: 45%;
+      margin-left:400px;
+      height: 500px;
+      padding-top: 70px;
+      background-color: rgba(168, 45, 45, 0);
+    }
+    #container{
+      display: block;
+    }
+    #container2{
+      display: none;
+    }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    background-color: rgb(218, 218, 218)
+  }
+  .mySlides2 {
+    display: none;
+    width: 100%;
+    background-color: rgba(127, 255, 212, 0);
+  }
+  .mySlides3 {
+    display: none;
+    width: 100%;
+    background-color: rgba(127, 255, 212, 0);
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .arrows{
+    background-color: rgba(132, 104, 158, 0);
+    display: flex;
+    width: 101%;
+    justify-content: left;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    height: fit-content;
+
+  }
+  .gallerybtn{
+    cursor: pointer;
+    position: flex;
+    width: auto;
+    height: 21px;
+    margin-left: 10px;
+    margin-top: 6.5px;
+    background-color: rgba(8, 8, 99, 0);
+    color: rgb(150, 150, 150);
+    font-weight: 400;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  /* Next & previous buttons */
+  .prev{
+    cursor: pointer;
+    position: flex;
+    width: auto;
+    height: fit-content;
+    padding: 4px;
+    background-color: rgba(0, 255, 170, 0);
+    color: rgb(150, 150, 150);
+    font-weight: 200;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    cursor: pointer;
+    position: flex;
+    width: auto;
+    height: fit-content;
+    padding: 4px;
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(150, 150, 150);
+    font-weight: 200;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: rgb(150, 150, 150);
+    background-color: rgba(0, 0, 255, 0);
+    font-size: 12px;
+    padding: 10px 0px;
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: rgba(34, 34, 34, 0);
+    padding: 2px 16px;
+    color: white;
+  }
+  .row{
+    width:100%;
+    margin-top: 25px;
+    height: fit-content;
+    display: grid;
+    animation: fade-inout 0.5s alternate;
+    grid-template-columns:repeat(4, 23%);
+    justify-content: space-between;
+    background-color: rgba(112, 112, 173, 0);
+  }
+  
+  .row:after {
+    content: "";
+    display: grid;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    display: flex;
+    height: fit-content;
+    width:100%;
+    margin-bottom: 15px;
+      background-color: rgb(34, 34, 34);
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  :hover{
+    color: rgb(245, 131, 131);
+  }
+  .tittle:hover{
+    color: rgb(74, 75, 77);
+  }
+  .bio:hover{
+    color: rgb(150, 150, 150);
+  }
+  .numbertext:hover{
+    color: rgb(150, 150, 150);
+  }
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  img.img1{
+    width: 100%;
+    margin:0;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    border-style: solid;
+    border-color: white;
+    animation: fade-inout 1s alternate;
+    justify-content:center;
+  }
+  img.img2{
+    height: inherit;
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    justify-content:center;
+    cursor: pointer;
+  }
+  .scrolltotop{
+    display: none;
+  } 
+  .btn{
+    display: none;
+    
+  }
+@media only screen and (max-device-width:600px)
+{
+  body{
+    padding: 0;
+    margin: 0;
+    font-family:'Inconsolata';
+    background-color: var(--primary-color);
+  }
+  ::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+  }
+  :root{
+    --primary-color: rgb(255, 255, 255);
+    --secondary-color: #222;
+  }
+  .dark-theme{
+    --primary-color: #222;
+    --secondary-color: rgb(150, 150, 150);
+  }
+  .Slideshow{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 255);
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+  .darkmode{
+    width: 25px;
+    height: 25px;
+    right: 0;
+    top: 0;
+    position:absolute;
+    background-color: rgba(0, 0, 255, 0);
+  }
+  .left{
+    background-color: rgba(137, 43, 226, 0);
+    position: relative;
+    width: 75%;
+    margin-left: 30px;
+    margin-top: 30px;
+    height:60px;
+  }
+  .right{
+    display: inline-flex;
+    float: right;
+    height: 130px;
+    background-color: rgba(43, 226, 73, 0);
+    width:0%;
+    margin-top: 20px;
+  }
+    .tittle{
+      display: flex;
+      -webkit-user-select: none; /* Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+      font-size: 1em;
+      background-color: rgba(79, 116, 197, 0);
+      font-weight: 600;
+      color: rgb(104, 105, 107);
+      width:fit-content;
+      height:fit-content;
+    }
+    .contact{
+      font-family: 'Inconsolata';
+      font-size: 1em;
+      font-weight: 400;
+      background-color: rgba(123, 255, 0, 0);
+      text-align: left;
+      color: rgb(150, 150, 150);
+      width:fit-content;
+      height: fit-content;
+      text-decoration: none;
+    }
+    .bio{
+      display:none;
+      position: relative;
+      font-size: .8em;
+      line-height: 20px;
+      background-color:rgba(170, 42, 42, 0);
+      text-align: justify;
+      color:var(--secondary-color);
+      width: 86%;
+      height: fit-content;
+      z-index: 1;
+      padding: 3%;
+      padding-left: 8%;
+      padding-right:6%;
+      margin: 0;
+      margin-top: 10px;
+      left:0px;
+      top:0px;
+      -webkit-user-select: none; /* Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+    }
+    .bioexpand{
+      display: inline;
+      font-size: .9em;
+      background-color: rgba(15, 247, 255, 0);
+      text-align: left;
+      color: rgb(150, 150, 150);
+      width:fit-content;
+      text-decoration: none;
+      cursor: pointer;
+      height: fit-content;
+      -webkit-user-select: none; /* Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+    }
+    .contactexpand{
+      display: inline;
+      font-size: .9em;
+      background-color: rgba(135, 218, 80, 0);
+      text-align: left;
+      color: rgb(150, 150, 150);
+      width:fit-content;
+      cursor: pointer;
+      height: fit-content;
+      -webkit-user-select: none; /* Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+    }
+    .work{
+      text-decoration: none;
+    }
+    .work1{
+      font-size: .8em;
+      background-color:rgba(153, 59, 59, 0);
+      text-align: justify;
+      color:var(--secondary-color);
+      width: 100%;
+      padding:0px;
+      padding-bottom:10px;
+      height:fit-content;
+      -webkit-user-select: none; /* Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+/Edge */
+      user-select: none; /* Standard */
+    }
+    .workmenu{
+      z-index: 1;
+      display:none;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+      padding: 3%;
+      padding-left: 8%;
+      padding-right:6%;
+      margin: 0;
+      margin-top: 10px;
+      left:0px;
+      top:0px;
+      height: fit-content;
+      background-color: rgba(0, 0, 255, 0);
+    }
+    .bioexpand .show{
+      visibility: visible;
+      -webkit-animation: fadeIn 1s;
+      animation: fadeIn 1s;
+    }
+    @keyframes fade-inout{
+      0%{ opacity: 0;}
+      100%{ opacity: 1;}
+    }
+    @-webkit-keyframes fadeIn {
+      from {opacity:0;}
+      to {opacity:1;}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity:1 ;}
+    }
+    .burger{
+      display: none;
+    }
+    .nav{
+      display: flex;
+      height: 20px;
+      text-align: center;
+      color: black;
+      background-color: rgba(127, 255, 212, 0);
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        margin-left:0px;
+        margin-top: 30px;
+        height: fit-content;
+        padding-top: 0px;
+        background-color: rgba(168, 45, 45, 0);
+      }
+      #container{
+        display: none;
+      }
+      #container2{
+        display: block;
+      }
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+      height: fit-content;
+      cursor: pointer;
+      background-color: rgba(127, 255, 212, 0);
+    }
+    .mySlides2 {
+      display: none;
+      width: 100%;
+      margin-left: 0px;
+      background-color: rgba(127, 255, 212, 0);
+    }
+    .mySlides3 {
+      display: none;
+      width: 100%;
+      background-color: rgba(127, 255, 212, 0);
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    .arrows{
+      background-color: rgba(132, 104, 158, 0);
+      display: none;
+      width: 100%;
+      justify-content: left;
+      height: fit-content;
+  
+    }
+    .gallerybtn{
+      cursor: pointer;
+      position: flex;
+      width: auto;
+      height: 21px;
+      margin-left: 10px;
+      margin-top: 6.5px;
+      background-color: rgba(8, 8, 99, 0);
+      color: rgb(150, 150, 150);
+      font-weight: 400;
+      font-size: 14px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    /* Next & previous buttons */
+    .prev{
+      cursor: pointer;
+      position: flex;
+      width: auto;
+      height: fit-content;
+      padding: 4px;
+      background-color: rgba(0, 255, 170, 0);
+      color: rgb(150, 150, 150);
+      font-weight: 200;
+      font-size: 16px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .next {
+      cursor: pointer;
+      position: flex;
+      width: auto;
+      height: fit-content;
+      padding: 4px;
+      background-color: rgba(0, 0, 255, 0);
+      color: rgb(150, 150, 150);
+      font-weight: 200;
+      font-size: 16px;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: rgb(150, 150, 150);
+      background-color: rgba(0, 0, 255, 0);
+      font-size: 12px;
+      padding: 10px 5px;
+      position: absolute;
+      top: 70px;
+      right: 0%;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: rgba(34, 34, 34, 0);
+      padding: 2px 16px;
+      color: white;
+    }
+    .row{
+      width:100%;
+      height: auto;
+      display: block;
+      animation: fade-inout 0.5s alternate;
+      background-color: rgba(112, 112, 173, 0);
+    }
+    
+    /* Six columns side by side */
+    .column {
+      display: flex;
+      max-height: 400px;
+      width:100%;
+      padding-bottom: 30px;
+        background-color: rgba(34, 34, 34, 0);
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    :hover{
+      color: rgb(245, 131, 131);
+    }
+    .tittle:hover{
+      color: rgb(74, 75, 77);
+    }
+    .bio:hover{
+      color: rgb(150, 150, 150);
+    }
+    .numbertext:hover{
+      color: rgb(150, 150, 150);
+    }
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    img.img1{
+      width: 100%;
+      height: fit-content;
+      margin:0;
+      margin-top: 0;
+      margin-bottom: 0;
+      display: flex;
+      border-style: solid;
+      border-color: white;
+      animation: fade-inout 1s alternate;
+      justify-content:center;
+    }
+    img.img2{
+      width: 95%;
+      height: fit-content;
+    }
+    .img2{
+      pointer-events: none;
+      width: 90%;
+      margin-top: 0;
+      margin-left: 2.5%;
+      display: flex;
+      justify-content:center;
+      cursor: pointer;
+    }
+    .scrolltotop{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 100px;
+      margin-top: 0px;
+      background-color: rgba(0, 0, 255, 0);
+    } 
+    .btn{
+      width:100%;
+      font-family: 'Inconsolata';
+      display: flex;
+      height: 30px;
+      background-color: rgba(170, 170, 170, 0);
+      margin: auto;
+      margin-top: 0px;
+      color: var(--secondary-color);
+      padding-top: 8px;
+      border: none;
+      justify-content: center;
+    }
+  }
