@@ -354,6 +354,12 @@ body{
     justify-content:center;
     cursor: pointer;
   }
+  .img3{
+    display: none;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom:60px;
+  }
   .scrolltotop{
     display: none;
   } 
@@ -665,7 +671,7 @@ body{
     .row{
       width:100%;
       height: auto;
-      display: block;
+      display: none;
       animation: fade-inout 0.5s alternate;
       background-color: rgba(112, 112, 173, 0);
     }
@@ -744,5 +750,16 @@ body{
       padding-top: 8px;
       border: none;
       justify-content: center;
+    }
+    .mobilegallery{
+      display: block;
+      width: 100%;
+      height:fit-content;
+    }
+    .img3{
+      display: block;
+      width: 95%;
+      margin-left: 2.5%;
+      margin-bottom:30px;
     }
   }
